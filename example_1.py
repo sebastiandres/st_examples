@@ -6,7 +6,7 @@ st.title("Page title and favicon example")
 
 html = """
 <script>
-top.document.title = "ABC · Streamlit"
+window.parent.document.title = "ABC"
 </script>
 """
 st.components.v1.html(html)
